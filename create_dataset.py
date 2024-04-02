@@ -12,8 +12,7 @@ hands = mp_hands.Hands(
     static_image_mode=True,
     min_detection_confidence=0.3,
     min_tracking_confidence=0.5,
-    max_num_hands=2,
-    use_landmarks=True)
+    max_num_hands=2)
 
 DATA_DIR = './data'
 
