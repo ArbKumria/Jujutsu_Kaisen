@@ -18,10 +18,16 @@ for dir_ in os.listdir(DATA_DIR):
         img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
         results = hands.process(img_rgb)
-        for hand_landmarks in results.multi
+        if results.multi_hand_landmarks:
+            for hand_landmarks in results.multi_hand_landmarks:
+                mp_drawing.draw_landmarks(
+                    img_rgb, #image to draw
+                    hand_landmarks, #model output
+                    mp_hands.HAND_CONNECTIONS, #hand connections
+                    mp_drawing_styles.get_default_hand_landmarks_style(),
+                    mp_drawing_styles.get_deffault_hand_connectionss_style())
 
-
-        plt.figure()
-        plt.imshow(img_rgb)
+            plt.figure()
+            plt.imshow(img_rgb)
 
 plt.show()
