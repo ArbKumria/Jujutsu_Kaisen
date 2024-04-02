@@ -27,7 +27,7 @@ for dir_ in os.listdir(DATA_DIR):
                     mp_drawing_styles.get_default_hand_landmarks_style(),
                     mp_drawing_styles.get_deffault_hand_connectionss_style())
 
-            plt.figure()
-            plt.imshow(img_rgb)
+        plt.figure()
+        plt.imshow(img_rgb)
 
 plt.show()
