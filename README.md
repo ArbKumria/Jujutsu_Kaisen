@@ -42,11 +42,4 @@ This project aims to recognize hand signs using machine learning. It consists of
 - MediaPipe
 - scikit-learn
 
-## Acknowledgments
-
-- The project was inspired by the need for accurate hand sign recognition.
-- Thanks to the MediaPipe library for providing hand landmark extraction capabilities.
-- Special thanks to the contributors who helped improve this project.
-
-Feel free to contribute and enhance the project! 🤝
 
