@@ -7,8 +7,8 @@ DATA_DIR = './data'
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
-number_of_classes = 3
-dataset_size = 100
+number_of_classes = 4 #change this value to introduce a larger/smaller amount of hand signs
+dataset_size = 100 #collect 100 pictures of each class to train model
 
 cap = cv2.VideoCapture(0)
 for j in range(number_of_classes):
