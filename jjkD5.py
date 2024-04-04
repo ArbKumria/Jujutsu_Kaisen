@@ -15,7 +15,7 @@ mp_drawing_styles = mp.solutions.drawing_styles
 
 hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=0.3)
 
-labels_dict = {0: 'Gojo Satoru', 1: 'B', 2: 'L'}
+labels_dict = {0: 'Gojo Satoru', 1: 'YOLO', 2: 'Shaka', 3: 'Bang-Bang'}
 while True:
 
     data_aux = []
